@@ -1,169 +1,234 @@
+# Welcome to geog0111: Scientific Computing 
+UCL Geography: Level 7 course, Scientific Computing
+
+![](images/ucl_logo.png)
+
+[![Documentation Status](https://readthedocs.org/projects/geog0111/badge/?version=latest)](https://geog0111.readthedocs.io/en/latest/?badge=latest)
+
+Online Notebooks via Binder:
+----------------------------
+ 
+Run the notebooks on Binder server directly by click on different
+chaper, it may take some time to start but just wait a bit....
+ 
+[Go to full list of
+notebooks](https://mybinder.org/v2/gh/profLewis/geog0111/master)
+ 
+Go to individual chapter:
+ 
+[Chapter0\_help](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter0_help.ipynb)
+ 
+[Chapter1\_Python\_introduction](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter1_Python_introduction.ipynb)
+ 
+[Chapter1\_Python\_introduction\_answers](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter1_Python_introduction_answers.ipynb)
+ 
+[Chapter2\_Numpy\_matplotlib](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter2_Numpy_matplotlib.ipynb)
+ 
+[Chapter2\_Numpy\_matplotlib\_answers](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter2_Numpy_matplotlib_answers.ipynb)
+ 
+[Chapter3\_0\_GDAL](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter3_0_GDAL.ipynb)
+ 
+[Chapter3\_1\_GDAL](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter3_1_GDAL.ipynb)
+ 
+[Chapter3\_1\_GDAL\_answers](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter3_1_GDAL_answers.ipynb)
+ 
+[Chapter3\_2\_MODIS\_download](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter3_2_MODIS_download.ipynb)
+ 
+[Chapter3\_2\_MODIS\_download\_answers](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter3_2_MODIS_download_answers.ipynb)
+ 
+[Chapter3\_3\_GDAL\_masking](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter3_3_GDAL_masking.ipynb)
+ 
+[Chapter3\_4\_GDAL\_stacking\_and\_interpolating](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter3_4_GDAL_stacking_and_interpolating.ipynb)
+ 
+[Chapter3\_4a\_GDAL\_stacking\_and\_interpolating-convolution](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter3_4a_GDAL_stacking_and_interpolating-convolution.ipynb)
+ 
+[Chapter3\_5\_Movies](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter3_5_Movies.ipynb)
+ 
+[Chapter3\_6A\_GDAL\_Reconciling\_projections\_prerequisites](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter3_6A_GDAL_Reconciling_projections_prerequisites.ipynb)
+ 
+[Chapter3\_6\_GDAL\_Reconciling\_projections](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter3_6_GDAL_Reconciling_projections.ipynb)
+ 
+[Chapter4\_Practical\_Part1](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter4_Practical_Part1.ipynb)
+ 
+[Chapter5\_Linear\_models](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter5_Linear_models.ipynb)
+ 
+[Chapter5\_Modelling\_and\_optimisation](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter5_Modelling_and_optimisation.ipynb)
+ 
+[Chapter6\_NonLinear\_Model\_Fitting](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter6_NonLinear_Model_Fitting.ipynb)
+ 
+[Chapter6\_NonLinear\_Model\_Fitting\_Solutions](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter6_NonLinear_Model_Fitting_Solutions.ipynb)
+ 
+[Chapter7\_FittingPhenologyModels](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter7_FittingPhenologyModels.ipynb)
+ 
+[Chapter7\_FittingPhenologyModels\_Solutions](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter7_FittingPhenologyModels_Solutions.ipynb)
+ 
+[Chapter8\_Practical\_Part2](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter8_Practical_Part2.ipynb)
+ 
+[Chapter9\_Fire\_and\_Teleconnections](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter9_Fire_and_Teleconnections.ipynb)
+ 
+[Chapter9\_Fire\_and\_Teleconnections\_Solution](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Chapter9_Fire_and_Teleconnections_Solution.ipynb)
+ 
+[Connection](https://mybinder.org/v2/gh/profLewis/geog0111/master?filepath=Connection.ipynb)
 
-![linux](docs/res/ubuntu_sm.png) [![Status](https://github.com/profLewis/librat/workflows/CI%20ubuntu/badge.svg)](https://github.com/profLewis/librat/actions?query=workflow%3A%22CI+ubuntu%22)  ![macOS](docs/res/apple_sm.png) [![Status](https://github.com/profLewis/librat/workflows/CI%20macos/badge.svg)](https://github.com/profLewis/librat/actions?query=workflow%3A%22CI+macos%22). ![win](docs/res/win_sm.png) [![Status](https://github.com/profLewis/librat/workflows/CI%20windows/badge.svg)](https://github.com/profLewis/librat/actions?query=workflow%3A%22CI+windows%22)
 
-<p align="center">
-  <a href="https://github.com/profLewis/librat">
-    <img src="http://www2.geog.ucl.ac.uk/~plewis/images/millet/millet.gif" alt="Millet the movie" width="72" height="72">
-  </a>
-</p>
-<h2 align="center">librat 🐀</h2>
 
-<p align="center">
-  A ray tracing library built for radiative transfer simulations for remote sensing studies.
-  <br>
-  <a href="https://github.com/profLewis/librat/docs"><strong>Explore librat docs »</strong></a>
-  <br>
-  <br>
-  <a href="https://github.com/profLewis/librat/issues/new?template=bug.md">Report bug</a>
-  ·
-  <a href="https://github.com/profLewis/librat/issues/new?template=feature.md&labels=feature">Request feature</a>
-  ·
-  <a href="https://blog.librat.com/">~~Blog~~</a>
-</p>
+## Course information
 
-## Table of contents
+### Course Convenor
 
-- [Quick start](#quick-start)
-- [Status](#status)
-- [Bugs and feature requests](#bugs-and-feature-requests)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [Community](#community)
-- [Versioning](#versioning)
-- [Creators](#creators)
-- [Thanks](#thanks)
-- [Copyright and license](#copyright-and-license)
+[Prof P. Lewis](http://www.geog.ucl.ac.uk/~plewis)
 
+N.B. 2019-20 Course Convenors: [Dr Qingling Wu](http://www.geog.ucl.ac.uk/about-the-department/people/research-staff/research-staff/qingling-wu/) 
 
-## Quick start
+### Course and Contributing Staff
 
-Several quick start options are available:
+[Prof Philip Lewis](http://www.geog.ucl.ac.uk/~plewis)  
 
-- [Download the latest release.](https://github.com/profLewis/librat/archive/master.zip)
-- Clone the repo: `git clone https://github.com/profLewis/librat.git`
+[Dr. Jose Gomez-Dans](http://www.geog.ucl.ac.uk/about-the-department/people/research-staff/research-staff/jose-gomez-dans/)
 
-`librat` (actually called `ratlib` in the code ) is a ray tracing library built for radiative transfer simulations for remote sensing studies. It was originally written in the later 1980s/early 1990s by [P. Lewis](http://www2.geog.ucl.ac.uk/~plewis/), as part of his [PhD, A Botanical Plant Modelling System for Remote Sensing
-Simulation Studies, UCL, 1996](http://www2.geog.ucl.ac.uk/~plewis/phd). The main advantage of this code is that it is part of a community reference effort for radiative transfer. That has been a major motivating factor in releasing the code in this (easy to use) form. It has also been used in a [wide range of studies](docs/ratindex.md).
+[Dr Qingling Wu](http://www.geog.ucl.ac.uk/about-the-department/people/research-staff/research-staff/qingling-wu/)
 
-Read the [Getting started page](https://github.com/profLewis/librat/docs/getting-started/introduction/) for information on examples, and more.
 
+### Purpose of this course
 
-## Status
+This course, geog0111 Scientific Computing, is a term 1 MSc module worth 15 credits (25% of the term 1 credits) that aims to:
 
+* impart an understanding of scientific computing
+* give students a grounding in the basic principles of algorithm development and program construction
+* to introduce principles of computer-based image analysis and model development
 
+It is open to students from a number of MSc courses run by the Department of Geography UCL, but the material should be of wider value to others wishing to make use of scientific computing. 
 
-## Bugs and feature requests
+The module will cover:
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/profLewis/librat/blob/master/.github/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/profLewis/librat/issues/new).
+* Computing in Python
+* Computing for image analysis
+* Computing for environmental modelling
+* Data visualisation for scientific applications
 
+### Learning Outcomes
 
-## Documentation
+At the end of the module, students should:
 
-todo
+* have an understanding of the Python programmibng language and experience of its use
+* have an understanding of algorithm development and be able to use widely used scientific computing software to manipulate datasets and accomplish analytical tasks
+* have an understanding of the technical issues specific to image-based analysis, model implementation and scientific visualisation
 
-### Running documentation locally
+### Timetable
 
+The course takes place over 10 weeks in term 1, in the Geography Department Unix Computing Lab (PB110) in the [Pearson Building](http://www.ucl.ac.uk/estates/roombooking/building-location/?id=003), UCL. 
 
-### Documentation for previous releases
+Classes take place from the second week of term to the final week of term, other than Reading week. See UCL [term dates](http://www.ucl.ac.uk/staff/term-dates) for further information.
 
+The timetable is available on the UCL Academic Calendar
 
-## Contributing
+### Assessment
 
-## Community
+Assessment is through two pieces of coursework, submitted in both paper form and electronically via Moodle. 
 
-Get updates on librat development and chat with the project maintainers and community members.
+See the [Moodle page](https://moodle.ucl.ac.uk/course/view.php?id=2796) for more details.
 
-- Follow [@RayLibrat on Twitter](https://twitter.com/RayLibrat).
+### Useful links
 
-## Versioning
+[Course Moodle page](https://moodle.ucl.ac.uk/course/view.php?id=2796)  
 
-See [the Releases section of our GitHub project](https://github.com/profLewis/librat/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [~~the official Bootstrap blog~~](https://blog.librat.com/) contain summaries of the most noteworthy changes made in each release.
+### Python
 
+[Python](http://www.python.org/) is a high level programming language that is freely available, relatively easy to learn and portable across different computing systems. In Python, you can rapidly develop solutions for the sorts of problems you might need to solve in your MSc courses and in the world beyond. Code written in Python is also easy to maintain, is (or should be) self-documented, and can easily be linked to code written in other languages.
 
-## Creators
+Relevant features include: 
 
-**Philip Lewis**
+- it is automatically compiled and executed 
+- code is portable provided you have the appropriate Python modules. 
+- for compute intensive tasks, you can easily make calls to methods written in (faster) lower-level languages such as C or FORTRAN 
+- there is an active user and development community, which means that new capabilities appear over time and there are many existing extensions and enhancements easily available to you.
 
-- <https://twitter.com/profplewis>
-- <https://github.com/profLewis>
+For further background on Python, look over the material on [Advanced Scientific Programming in Python](https://python.g-node.org/wiki/schedule) or [python.org](http://www.python.org/) web sites.
 
+We are assuming that you are new to computing in this course. We will not explicitly go through unix (operating system) notes, but you should make yourself familiar with the basic concepts. 
 
+### Using the course notes
 
-## Thanks
+We will generally use the `jupyter` notebooks for running interactive Python programs.
 
+You will probably want to run each session and store scripts in your `Data` (or `DATA`) directory.
 
-Thanks 
+If you are taking this course at UCL, the notes should already have been downloaded to your `DATA` directory.
 
-## Sponsors
+If so, then:
 
+```
+cd /directory/to/geog0111
+git reset --hard HEAD
+git pull
+```
 
-## Backers
+will update the notes (for any changes I make over the sessions).
 
+If you need to download the notes and want to run the session directly in the notebook, you will need to download the course material from [github](https://github.com/profLewis/geog0111) and run the notebook with e.g.:
 
-## Copyright and license
+```
+cd /directory/to/
+git clone https://github.com/profLewis/geog0111.git
+```
 
+to obtain the notes. 
 
+### Using python
 
-To set the library up on your computer, you need to configure and compile the code. As explained in more detail below, this involves typing:
+We suggest you use the [anaconda python distribution](http://www.anaconda.com). if you are *not* using the UCL resources (i.e. using your own comnputer), you should download and install an [anaconda distribution](https://www.anaconda.com/download). If you *are* using the UCL computers, then it should be there already.
 
-    ./configure; make clean all test
-    
-at the shell prompt. Press the `<return>` key to execute the commands. The semicolon `;` allows us to put multiple commands on the same line. We could otherwise type them on seperate lines. 
+You may also find it of value to have [git](http://git-scm.com/) installed.
 
+Assuming you have a copy of the notes in the directory ('folder') `~/DATA/geog0111` then you can set up a specific 'environment' in which to run these notes:
 
-<h4 align="center">📲Configuration</h4>
+```
+cd /directory/to/geog0111
+conda env create -f environment.yml
+```
 
+If you are updating the notes, and geog0111 already exists, use instead:
 
+```
+cd /directory/to/geog0111
+conda env update -f environment.yml
+```
 
-To configure this library on your computer, in a unix shell type:
+This will create an environment called `geog0111` and make sure you have all of the required dependencies.
 
-    ./configure
+If you have created the environment, you can activate it with:
 
-Press the `<return>` key to execute the command. The configure script sets up the environment for your computer. The reason we type `./` in front of it, it to tell the unix interpreter that the script `configure` is in the **current working directory** which is indicated by `.`. It does this by testing that various options work on your particular setup. The range of options we have should work with most `*nix` setups. Specifically, [`configure`](configure)  sets variables from [`config.in`](config.in):
+```
+conda activate geog0111
+python setup.py install
+```
 
-    set CCS = ("gcc" "cc")
-    set CFLAGSS = ("-I." "-fPIC")
-    set DYNS = ("ld -G" "libtool  -L.. -lc -dynamic -undefined dynamic_lookup")
-    set MAKES = ("gmake" "make")
-    set OPTS = ("-g")
-    # specify a temporary directory
-    set TMP = /tmp
-    
-These are the options considered in configure. For example, we first try a compiler `gcc` and if that fails, try `cc`. We try ther dynamic linker `ld -G` and if that fails, `libtool  -L.. -lc -dynamic -undefined dynamic_lookup` etc. Note that the configutaion will settle on the first option in the list that passes some internal tests (follow through the script [`configure`](configure)).
 
-The configuation the sets e.g. (settings on `OS X x86_64`):
+For further advice on checking, setting or deleting `conda` environments, see the [conda help pages](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
-    ARCH = x86_64
-    OBJ = objects.${ARCH}
 
-    BPMS = /Users/plewis/librat
-    LIB = ${BPMS}/lib
-    BIN = ${BPMS}/bin
+To go to the directory for the first session:  
 
-    CFLAGS = -I.
-    MAKE = make
-    WG = -L -R --create-dirs -o
-    WGET = /usr/bin/curl
-    CC = gcc
-    DYN = libtool -L.. -lc -dynamic -undefined dynamic_lookup
-    OPT = -g
+`cd /directory/to/geog0111`  
+`jupyter notebook Chapter1_Python_intro.ipynb`  
 
-in the file [`src/makefile`](src/makefile). Note that [`src/makefile`](src/makefile) is generate from the template [`src/Makefile.in`](src/Makefile.in).
+You quit an `jupyter` notebook session with `^C` (`Control C`).
 
+To exectute ('run') blocks of Python code in the notebook, use `^<return>` (`SHIFT` and `RETURN` keys together).
 
-<h4 align="center">⏳ Compilation</h4>
+Alternatively, just run `ipython`:  
+```
+cd /directory/to/geog0111
+ipython
+```
 
+and type your own commands in at the prompt, following the class or the material on the webpages.
 
-To compile and test the library (after running [`./configure`)](configure), type:
+### Course Notes
 
-    make clean all test
-    
-Press the `<return>` key to execute the command. In fact, if you forget to run [`./configure`)](configure), this will run it for you, via the file [`makefile`](makefile). The command `make clean` clears out any previously compiled code. Then `make all` compiles the library `${BPMS}/lib/${ARCH}/libratlib.so` (so, you refer to this as `-L ${BPMS}/lib/${ARCH} -lratlib`. It also compiles a `C` language interface to the library, `${BPMS}/bin/${ARCH}/RATstart`. `make test` runs a test on the `RATstart` code, comparing a simple ray tracing outout to a reference one.
+[Course notes](index.ipynb)  
 
-To sum up, after compilation, you will have generated files in
+### Help
 
-* [`bin/${ARCH}`](bin/x86_64) : executable -- `RATstart`
-* [`lib/${ARCH}`](lib/x86_64) : shared object library -- `libratlib.so`
-
-Notice that these links ⛓ (`bin/x86_64`, `lib/x86_64`)  don't exist on the github repository: they are user-generated!
-
+[Help](Chapter0_help.ipynb)
+[Connections to the lab](Connection.ipynb)
