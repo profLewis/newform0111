@@ -1,6 +1,6 @@
 # Prerequisites
 *.d
-
+*.swp
 
 build
 docs/source
