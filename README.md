@@ -289,6 +289,25 @@ This now exists as [https://hub.docker.com/repository/docker/proflewis/geog0111]
 
 	docker pull proflewis/geog0111:latest
 	
+Additional info:
+
+To clear cache and force a reload of the repository, use:
+
+	docker system prune -a
+	
+Then
+
+	docker build --rm -t jupyter/geog0111 .
+
+etc. as above
+	
+maybe:
+see https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-docker-for-use-with-github-packages
+
+	docker tag jupyter/geog0111 docker.pkg.github.com/proflewis/newform0111/newform0111.git:latest
+	
+	
+	
 Using Docker 
 ------------
 
