@@ -288,6 +288,18 @@ Upload:
 This now exists as [https://hub.docker.com/repository/docker/proflewis/geog0111](https://hub.docker.com/repository/docker/proflewis/geog0111), and you can now simply load it as:
 
 	docker pull proflewis/geog0111:latest
+
+Additional info:
+
+To clear cache and force a reload of the repository, use:
+
+	docker system prune -a
+	
+Then
+
+	docker build --rm -t jupyter/geog0111 .
+
+etc. as above
 	
 Using Docker 
 ------------
@@ -298,4 +310,4 @@ Make sure you install docker on you local computer, then type:
 	
 Then, run it with:
 
-	docker run -it --rm -p 8888:8888 proflewis/geog0111:latest start.sh jupyter lab
+	docker run -it --rm -p 8888:8888 proflewis/geog0111:latest start.sh jupyter notebook
