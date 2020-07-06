@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - ipython
   - gdal>=3.0.4
   - hdf5>=1.10.5
   - ipykernel>=5.3.0
