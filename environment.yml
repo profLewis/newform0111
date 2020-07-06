@@ -3,6 +3,9 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - anaconda-client 
+  - conda-build
+  - conda-verify  
   - ipython
   - gdal>=3.0.4
   - hdf5>=1.10.5

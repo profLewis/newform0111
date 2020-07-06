@@ -1,9 +1,9 @@
 package:
-  name: conda_gc_test
-  version: 1.2.1
+  name: newform0111
+  version: 1.0.0
 
 build:
-  number: 3
+  number: 1
 
 requirements:
   run:
