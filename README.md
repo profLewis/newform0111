@@ -357,3 +357,18 @@ Then, to link to (my) docker space (use your own docker usename in place of `pro
 Upload:
 
 	docker push proflewis/geog0111
+
+This now exists as [https://hub.docker.com/repository/docker/proflewis/geog0111](https://hub.docker.com/repository/docker/proflewis/geog0111), and you can now simply load it as:
+
+	docker pull proflewis/geog0111:latest
+	
+Using Docker 
+------------
+
+Make sure you install docker on you local computer, then type:
+
+	docker pull proflewis/geog0111:latest
+	
+Then, run it with:
+
+	docker run -it --rm -p 8888:8888 proflewis/geog0111:latest start.sh jupyter lab
