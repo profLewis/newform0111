@@ -5,6 +5,13 @@ UCL Geography: Level 7 course, Scientific Computing
 
 [![Documentation Status](https://readthedocs.org/projects/geog0111/badge/?version=latest)](https://geog0111.readthedocs.io/en/latest/?badge=latest)
 
+
+
+ 	`conda install git pip` 
+
+	`pip install git+git://github.com/profLewis/newform0111@master`
+
+
 Online Notebooks via Binder:
 ----------------------------
  
