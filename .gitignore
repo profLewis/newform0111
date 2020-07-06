@@ -6,6 +6,7 @@ build
 docs/source
 docs/res
 obj
+dist
 
 # my stuff
 config.out
