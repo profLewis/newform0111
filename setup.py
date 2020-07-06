@@ -1,4 +1,4 @@
-"""setuptools for geog0111 Scientific Computing, UCL 
+"""setuptools for newform0111 Scientific Computing, UCL 
 
 https://github.com/profLewis/newform0111
 """

@@ -3,7 +3,7 @@
 # doesnt change directory names at present
 
 # assume we run it from old name
-export old=geog0111
+export old=newform0111
 #`basename "$PWD"`
 export new=`basename "$PWD"`
 grep $old .???* * */* */*/* */*/*/* | grep -v Binary | grep -v build | grep -v egg-info > /tmp/x.$$
@@ -24,3 +24,5 @@ do
   sed < $xdir/$in 's/'$old'/'$new'/g' > $out
 done
 rm -f /tmp/x.$$ $xdir
+
+
