@@ -13,6 +13,7 @@ makefile
 *.AngleHistogram.*.dat
 *.NumberDensity.*.dat
 *.SizeHistogram.*.dat
+*.egg-info
 
 # Object files
 *.o
