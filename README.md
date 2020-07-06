@@ -310,4 +310,4 @@ Make sure you install docker on you local computer, then type:
 	
 Then, run it with:
 
-	docker run -it --rm -p 8888:8888 proflewis/geog0111:latest start.sh jupyter lab
+	docker run -it --rm -p 8888:8888 proflewis/geog0111:latest start.sh jupyter notebook
