@@ -251,6 +251,48 @@ and type your own commands in at the prompt, following the class or the material
 [Connections to the lab](Connection.ipynb)
 
 
+For users
+=========
+
+Preliminaries
+-------------
+
+The repository of these notes is [https://github.com/profLewis/newform0111](https://github.com/profLewis/newform0111).
+
+If you navigate to that link, and look under the `Code` tab, you will see various ways you can download the notes.
+
+The main one we will uses `git`. You should first check that you have `git` installed (e.g. type `git` in a terminal / shell window).
+
+We also assume you are using the `conda` distribution of python. Check that you have that installed (e.g. type `conda` in a terminal / shell window).
+
+If either of these fail, then find the approrpate downloads to install them for your computer, and try again.
+
+Download the notes
+------------------
+
+Change directory to where you want to work, e.g. (BUT put in your own directory name!):
+
+	cd /Users/Documents/GitHub
+
+Make a local clone of the notes:
+
+	git clone https://github.com/profLewis/newform0111.git
+
+Install this with:
+
+	python setup.py install && bash postBuild
+
+Install utility codes
+---------------------
+
+Users can install the course utility codes with:
+
+	conda install newform0111
+	
+They can then access utility codes from this:
+
+	python -c "import geog0111;help(geog0111)"
+
 
 For developers
 ==============
@@ -264,7 +306,7 @@ Package configuration is done in the file [meta.yaml](meta.yaml).
 
 Assume we have the distribution locally in `/Users/Documents/GitHub/newform0111`:
 
-	cd /Users/plewis/Documents/GitHub/newform0111
+	cd /Users/Documents/GitHub/newform0111
 	
 	# installs
 	conda install anaconda-client conda-build conda-verify
