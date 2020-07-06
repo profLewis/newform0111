@@ -17,6 +17,9 @@ Then use `pip` to install from github:
 	pip install git+git://github.com/profLewis/newform0111@master
 
 
+	conda config --add channels profLewis
+
+
 Online Notebooks via Binder:
 ----------------------------
  
