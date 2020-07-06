@@ -280,7 +280,7 @@ Make a local clone of the notes:
 
 Install this with:
 
-	python setup.py install 
+	python setup.py install && bash postBuild
 
 Install utility codes
 ---------------------
