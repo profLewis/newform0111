@@ -334,3 +334,19 @@ Then install with:
 They can then access utility codes from this:
 
 	python -c "import newform0111;help(newform0111)"
+	
+Docker
+------
+
+You can set up a docker machine by simply downloading the [Dockerfile](https://raw.githubusercontent.com/profLewis/newform0111/master/Dockerfile) file. 
+
+Make sure you have docker installed on your local machine.
+
+Then `cd` to where you stored the `Dockerfile` and run:
+
+	docker build --rm -t jupyter/geog0111 .
+	
+This will take some time to download and install (10s of minutes), but when it is:
+
+	docker run -it --rm -p 8888:8888 jupyter/geog0111 start.sh jupyter lab
+	
