@@ -1,5 +1,6 @@
 FROM jupyter/datascience-notebook:9f9e5ca8fe5a
 # Install in the default python3 environment
+RUN pip install --upgrade pip
 RUN pip install 'ggplot==0.6.8'
 
 RUN git clone https://github.com/profLewis/newform0111.git
