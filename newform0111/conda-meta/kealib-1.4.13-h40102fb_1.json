@@ -1,0 +1,127 @@
+{
+  "build": "h40102fb_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [
+    "hdf5 >=1.10.6,<1.10.7.0a0",
+    "libcxx >=9.0.1"
+  ],
+  "extracted_package_dir": "/Users/plewis/anaconda3/envs/umpteen/pkgs/kealib-1.4.13-h40102fb_1",
+  "features": "",
+  "files": [
+    "bin/kea-config",
+    "include/libkea/KEAAttributeTable.h",
+    "include/libkea/KEAAttributeTableFile.h",
+    "include/libkea/KEAAttributeTableInMem.h",
+    "include/libkea/KEACommon.h",
+    "include/libkea/KEAException.h",
+    "include/libkea/KEAImageIO.h",
+    "include/libkea/kea-config.h",
+    "lib/libkea.1.4.13.dylib",
+    "lib/libkea.1.4.dylib",
+    "lib/libkea.dylib"
+  ],
+  "fn": "kealib-1.4.13-h40102fb_1.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/Users/plewis/anaconda3/envs/umpteen/pkgs/kealib-1.4.13-h40102fb_1",
+    "type": 1
+  },
+  "md5": "26c21d11119e7d39e32a5ac261face07",
+  "name": "kealib",
+  "package_tarball_full_path": "/Users/plewis/anaconda3/envs/umpteen/pkgs/kealib-1.4.13-h40102fb_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/kea-config",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/usr/local/miniconda/conda-bld/kealib_1587158292839/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "d1523294db0226a3248f52958ce3e8d3f4f1c4a81dc4d45779c8e937be7325f9",
+        "sha256_in_prefix": "6d6fd749b290cb4c246c3de3f7612dfd465428d70cc05fd57e456d07616e3b09",
+        "size_in_bytes": 2971
+      },
+      {
+        "_path": "include/libkea/KEAAttributeTable.h",
+        "path_type": "hardlink",
+        "sha256": "f0e1885ff696e48f71e144ee16a7393bd4f8619276736958c447ff0bcc075862",
+        "sha256_in_prefix": "f0e1885ff696e48f71e144ee16a7393bd4f8619276736958c447ff0bcc075862",
+        "size_in_bytes": 8640
+      },
+      {
+        "_path": "include/libkea/KEAAttributeTableFile.h",
+        "path_type": "hardlink",
+        "sha256": "c90c051550a771ae7e07f58ab4fedc50e27fb5f8acb748405059bc1ce08b080a",
+        "sha256_in_prefix": "c90c051550a771ae7e07f58ab4fedc50e27fb5f8acb748405059bc1ce08b080a",
+        "size_in_bytes": 5036
+      },
+      {
+        "_path": "include/libkea/KEAAttributeTableInMem.h",
+        "path_type": "hardlink",
+        "sha256": "9c7096d979e1f65edef03b48f72f4ff54725217e92475fc14d131f7d09307277",
+        "sha256_in_prefix": "9c7096d979e1f65edef03b48f72f4ff54725217e92475fc14d131f7d09307277",
+        "size_in_bytes": 4655
+      },
+      {
+        "_path": "include/libkea/KEACommon.h",
+        "path_type": "hardlink",
+        "sha256": "2c5a98161d773018a7c38d38b34ec3f3d832bac156d1105893b4452259abba83",
+        "sha256_in_prefix": "2c5a98161d773018a7c38d38b34ec3f3d832bac156d1105893b4452259abba83",
+        "size_in_bytes": 11629
+      },
+      {
+        "_path": "include/libkea/KEAException.h",
+        "path_type": "hardlink",
+        "sha256": "9bf75bb2e0e7506cb3776809afaaff62ad6eff27e1838d60d3f29def00515b7c",
+        "sha256_in_prefix": "9bf75bb2e0e7506cb3776809afaaff62ad6eff27e1838d60d3f29def00515b7c",
+        "size_in_bytes": 2592
+      },
+      {
+        "_path": "include/libkea/KEAImageIO.h",
+        "path_type": "hardlink",
+        "sha256": "663139bc991ab928e12357cd73be0cdf90ef939ad21f2f953535ad7591eee0b6",
+        "sha256_in_prefix": "663139bc991ab928e12357cd73be0cdf90ef939ad21f2f953535ad7591eee0b6",
+        "size_in_bytes": 9135
+      },
+      {
+        "_path": "include/libkea/kea-config.h",
+        "path_type": "hardlink",
+        "sha256": "21ba31b52088d079e6b0f204321d9a6424651236f3e4329b7418072850e070ac",
+        "sha256_in_prefix": "21ba31b52088d079e6b0f204321d9a6424651236f3e4329b7418072850e070ac",
+        "size_in_bytes": 387
+      },
+      {
+        "_path": "lib/libkea.1.4.13.dylib",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/usr/local/miniconda/conda-bld/kealib_1587158292839/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "f906626da649dcc612e52aff0767d07fd86a2ba64977663bd2e21f79376be7a9",
+        "sha256_in_prefix": "e9a6c5eabbb0cdc6f9c418c1fb6d53dff3ba111a9d0d1e467019c33793669d09",
+        "size_in_bytes": 419600
+      },
+      {
+        "_path": "lib/libkea.1.4.dylib",
+        "path_type": "softlink",
+        "sha256": "f906626da649dcc612e52aff0767d07fd86a2ba64977663bd2e21f79376be7a9",
+        "size_in_bytes": 419600
+      },
+      {
+        "_path": "lib/libkea.dylib",
+        "path_type": "softlink",
+        "sha256": "f906626da649dcc612e52aff0767d07fd86a2ba64977663bd2e21f79376be7a9",
+        "size_in_bytes": 419600
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "b328be3861f9138ffa2c3749801af271ec77bc633814cd599bd44325915236d8",
+  "size": 160905,
+  "subdir": "osx-64",
+  "timestamp": 1587158436276,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/kealib-1.4.13-h40102fb_1.tar.bz2",
+  "version": "1.4.13"
+}

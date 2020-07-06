@@ -1,0 +1,50 @@
+{
+  "build": "h0b31af3_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/Users/plewis/anaconda3/envs/umpteen/pkgs/ripgrep-12.1.1-h0b31af3_0",
+  "features": "",
+  "files": [
+    ".crates2.json",
+    "bin/rg"
+  ],
+  "fn": "ripgrep-12.1.1-h0b31af3_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/Users/plewis/anaconda3/envs/umpteen/pkgs/ripgrep-12.1.1-h0b31af3_0",
+    "type": 1
+  },
+  "md5": "a173bd1660cf8890ee8d2dfcdd88e7cb",
+  "name": "ripgrep",
+  "package_tarball_full_path": "/Users/plewis/anaconda3/envs/umpteen/pkgs/ripgrep-12.1.1-h0b31af3_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": ".crates2.json",
+        "path_type": "hardlink",
+        "sha256": "91b4c08c8e945a8ba7dda895e6ed21d9891fc71e9548e86d7688bde8f79511a8",
+        "sha256_in_prefix": "91b4c08c8e945a8ba7dda895e6ed21d9891fc71e9548e86d7688bde8f79511a8",
+        "size_in_bytes": 469
+      },
+      {
+        "_path": "bin/rg",
+        "path_type": "hardlink",
+        "sha256": "0435c1e091869b2aeb0825283c70ef18d2ba5b7e9ba2cdecca730b8b42f3139a",
+        "sha256_in_prefix": "0435c1e091869b2aeb0825283c70ef18d2ba5b7e9ba2cdecca730b8b42f3139a",
+        "size_in_bytes": 4713804
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "50d2b5c71cf6f0b97d451884fd808efc267eaa5645180efcc696291590fccde7",
+  "size": 1705430,
+  "subdir": "osx-64",
+  "timestamp": 1590821843231,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/ripgrep-12.1.1-h0b31af3_0.tar.bz2",
+  "version": "12.1.1"
+}

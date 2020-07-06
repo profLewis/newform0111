@@ -1,0 +1,145 @@
+{
+  "build": "py38_1000",
+  "build_number": 1000,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [
+    "python_abi * *_cp38"
+  ],
+  "depends": [
+    "jupyter_contrib_core >=0.3",
+    "notebook >=4.0",
+    "python >=3.8,<3.9.0a0",
+    "setuptools"
+  ],
+  "extracted_package_dir": "/Users/plewis/anaconda3/envs/umpteen/pkgs/jupyter_highlight_selected_word-0.2.0-py38_1000",
+  "features": "",
+  "files": [
+    "bin/.jupyter_highlight_selected_word-post-link.sh",
+    "bin/.jupyter_highlight_selected_word-pre-unlink.sh",
+    "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/INSTALLER",
+    "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/LICENSE.txt",
+    "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/METADATA",
+    "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/RECORD",
+    "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/WHEEL",
+    "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/top_level.txt",
+    "lib/python3.8/site-packages/jupyter_highlight_selected_word/__init__.py",
+    "lib/python3.8/site-packages/jupyter_highlight_selected_word/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/README.md",
+    "lib/python3.8/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/configurator.yaml",
+    "lib/python3.8/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/main.js"
+  ],
+  "fn": "jupyter_highlight_selected_word-0.2.0-py38_1000.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/Users/plewis/anaconda3/envs/umpteen/pkgs/jupyter_highlight_selected_word-0.2.0-py38_1000",
+    "type": 1
+  },
+  "md5": "fd1c2047132b3ce2f9b74192dff44c35",
+  "name": "jupyter_highlight_selected_word",
+  "package_tarball_full_path": "/Users/plewis/anaconda3/envs/umpteen/pkgs/jupyter_highlight_selected_word-0.2.0-py38_1000.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/.jupyter_highlight_selected_word-post-link.sh",
+        "path_type": "hardlink",
+        "sha256": "965aaed3aeb11ab76e241f5f2b7bfc85b78a117ba26a3e4dfd9b031c52843234",
+        "sha256_in_prefix": "965aaed3aeb11ab76e241f5f2b7bfc85b78a117ba26a3e4dfd9b031c52843234",
+        "size_in_bytes": 428
+      },
+      {
+        "_path": "bin/.jupyter_highlight_selected_word-pre-unlink.sh",
+        "path_type": "hardlink",
+        "sha256": "d6996dff31b87120e1f9792d5a138ce7a2c4ffc249a7398578d6b0767269969d",
+        "sha256_in_prefix": "d6996dff31b87120e1f9792d5a138ce7a2c4ffc249a7398578d6b0767269969d",
+        "size_in_bytes": 432
+      },
+      {
+        "_path": "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "f1cdd7963802877fb7cd30eff54fa1e377cedfc9e1e77e51861ce8b70c700f0c",
+        "sha256_in_prefix": "f1cdd7963802877fb7cd30eff54fa1e377cedfc9e1e77e51861ce8b70c700f0c",
+        "size_in_bytes": 1640
+      },
+      {
+        "_path": "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "35df4f6bc3d8c11b5c7e195770d6f494bff34ef743a92c970af600098ee4419e",
+        "sha256_in_prefix": "35df4f6bc3d8c11b5c7e195770d6f494bff34ef743a92c970af600098ee4419e",
+        "size_in_bytes": 696
+      },
+      {
+        "_path": "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "a1ea2eb05480c68ccf8e9b5967c16ddb29aab4b0b3687ed40c72c5a1f7850991",
+        "sha256_in_prefix": "a1ea2eb05480c68ccf8e9b5967c16ddb29aab4b0b3687ed40c72c5a1f7850991",
+        "size_in_bytes": 1195
+      },
+      {
+        "_path": "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "f3335865bc10497a01f487d73a33df78dc2f02c00b0237df824dbb16abc259ba",
+        "sha256_in_prefix": "f3335865bc10497a01f487d73a33df78dc2f02c00b0237df824dbb16abc259ba",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "89f445bd669a5d52e7880a35f454b4cc02a64cfb36ae00b504520f48c0bd619b",
+        "sha256_in_prefix": "89f445bd669a5d52e7880a35f454b4cc02a64cfb36ae00b504520f48c0bd619b",
+        "size_in_bytes": 32
+      },
+      {
+        "_path": "lib/python3.8/site-packages/jupyter_highlight_selected_word/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "bb78e5d16e0f4d24d5896da01e2e79ac739674f20476497d5e04de272baed5e4",
+        "sha256_in_prefix": "bb78e5d16e0f4d24d5896da01e2e79ac739674f20476497d5e04de272baed5e4",
+        "size_in_bytes": 760
+      },
+      {
+        "_path": "lib/python3.8/site-packages/jupyter_highlight_selected_word/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "200623cfccf2baca0d3923ff5f8162f6a553c1923b49558cb37208fab8cb8cce",
+        "sha256_in_prefix": "200623cfccf2baca0d3923ff5f8162f6a553c1923b49558cb37208fab8cb8cce",
+        "size_in_bytes": 574
+      },
+      {
+        "_path": "lib/python3.8/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/README.md",
+        "path_type": "hardlink",
+        "sha256": "c1e4c247ab62efac424e1bdc8eafd2fd4be696c8367e26a57cd65174cc6db6a3",
+        "sha256_in_prefix": "c1e4c247ab62efac424e1bdc8eafd2fd4be696c8367e26a57cd65174cc6db6a3",
+        "size_in_bytes": 4924
+      },
+      {
+        "_path": "lib/python3.8/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/configurator.yaml",
+        "path_type": "hardlink",
+        "sha256": "524d491c1d6af9683fecc13a90a40860163f08cc39c520da869e59381dffd371",
+        "sha256_in_prefix": "524d491c1d6af9683fecc13a90a40860163f08cc39c520da869e59381dffd371",
+        "size_in_bytes": 4135
+      },
+      {
+        "_path": "lib/python3.8/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/main.js",
+        "path_type": "hardlink",
+        "sha256": "a217d4444b879998147bb1873fa2f81b3f4d2cd1de8d9f70c94bc253900f07a3",
+        "sha256_in_prefix": "a217d4444b879998147bb1873fa2f81b3f4d2cd1de8d9f70c94bc253900f07a3",
+        "size_in_bytes": 13598
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "jupyter_highlight_selected_word[version='>=0.2.0']",
+  "sha256": "9a513c9c5afb745432d5fb1649c1b45fde59df7d45a8142ff84c2c3c5bc3b97e",
+  "size": 14050,
+  "subdir": "osx-64",
+  "timestamp": 1573064896091,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/jupyter_highlight_selected_word-0.2.0-py38_1000.tar.bz2",
+  "version": "0.2.0"
+}

@@ -1,0 +1,13 @@
+prefix=/Users/plewis/Documents/GitHub/newform0111/newform0111
+exec_prefix=/Users/plewis/Documents/GitHub/newform0111/newform0111
+libdir=/Users/plewis/Documents/GitHub/newform0111/newform0111/lib
+includedir=/Users/plewis/Documents/GitHub/newform0111/newform0111/include
+ccompiler=/usr/local/miniconda/conda-bld/libnetcdf_1588364124148/_build_env/bin/x86_64-apple-darwin13.4.0-clang
+
+Name: netCDF
+Description: NetCDF Client Library for C
+URL: http://www.unidata.ucar.edu/netcdf
+Version: 4.7.4
+Libs: -L${libdir} -lnetcdf
+Libs.private: -lmfhdf -ldf -lhdf5_hl -lhdf5 -lpthread -lz -ldl -lm -lcurl
+Cflags: -I${includedir}

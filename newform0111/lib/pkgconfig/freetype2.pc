@@ -1,0 +1,14 @@
+prefix=/Users/plewis/Documents/GitHub/newform0111/newform0111
+exec_prefix=/Users/plewis/Documents/GitHub/newform0111/newform0111
+libdir=/Users/plewis/Documents/GitHub/newform0111/newform0111/lib
+includedir=/Users/plewis/Documents/GitHub/newform0111/newform0111/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 23.2.17
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz -L/Users/plewis/Documents/GitHub/newform0111/newform0111/lib -lpng16 -lz
+Cflags: -I${includedir}/freetype2

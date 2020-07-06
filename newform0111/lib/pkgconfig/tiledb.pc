@@ -1,0 +1,14 @@
+prefix="/Users/plewis/Documents/GitHub/newform0111/newform0111"
+exec_prefix="${prefix}"
+libdir="${prefix}/lib"
+includedir="${prefix}/include/tiledb"
+
+Name: TileDB
+Description: The Storage Engine for Data Science
+URL: https://github.com/TileDB-Inc/TileDB
+Version: 2.0.5
+Requires: 
+Requires.private: 
+Cflags: -I"${includedir}"
+Libs: -L"${libdir}" -ltiledb
+Libs.private: -L"${libdir}" -ltiledb 

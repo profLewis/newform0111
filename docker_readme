@@ -1,0 +1,14 @@
+docker directory
+
+test config with:
+
+export GID=`id -g`  && export USER=`id -un` && docker-compose config
+
+run with:
+
+export GID=`id -g` && export USER=`id -un` && docker-compose up --build
+
+When you are done developing and have shut down the JupyterLab server, the following command tears down the networking infrastructure for the running container.
+
+docker-compose down
+

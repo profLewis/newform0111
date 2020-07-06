@@ -1,0 +1,16 @@
+prefix=/Users/plewis/Documents/GitHub/newform0111/newform0111
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+ccompiler=x86_64-apple-darwin13.4.0-clang
+cppcompiler=x86_64-apple-darwin13.4.0-clang++
+
+Name: libdapclient
+Description: Client side of the OPeNDAP C++ implementation of the Data Access Protocol
+Version: 3.20.6
+Requires: libdap
+Libs: -L${libdir} -ldapclient
+Libs.private: -L/Users/plewis/Documents/GitHub/newform0111/newform0111/lib -lcurl -lssh2 -lssh2 -lssl -lcrypto -lssl -lcrypto -lgssapi_krb5 -lresolv -lz
+Requires.private: 
+Cflags: -I${includedir}/libdap
+

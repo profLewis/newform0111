@@ -1,0 +1,111 @@
+{
+  "build": "py38h64e0658_1004",
+  "build_number": 1004,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.8,<3.9.0a0",
+    "python_abi 3.8.* *_cp38"
+  ],
+  "extracted_package_dir": "/Users/plewis/anaconda3/envs/umpteen/pkgs/pycosat-0.6.3-py38h64e0658_1004",
+  "features": "",
+  "files": [
+    "lib/python3.8/site-packages/__pycache__/test_pycosat.cpython-38.pyc",
+    "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/INSTALLER",
+    "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/LICENSE",
+    "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/METADATA",
+    "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/RECORD",
+    "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/WHEEL",
+    "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/top_level.txt",
+    "lib/python3.8/site-packages/pycosat.cpython-38-darwin.so",
+    "lib/python3.8/site-packages/test_pycosat.py"
+  ],
+  "fn": "pycosat-0.6.3-py38h64e0658_1004.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/Users/plewis/anaconda3/envs/umpteen/pkgs/pycosat-0.6.3-py38h64e0658_1004",
+    "type": 1
+  },
+  "md5": "f7a147fdfcbd6674190c0982648fb162",
+  "name": "pycosat",
+  "package_tarball_full_path": "/Users/plewis/anaconda3/envs/umpteen/pkgs/pycosat-0.6.3-py38h64e0658_1004.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.8/site-packages/__pycache__/test_pycosat.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "96cd6540c26605240f574df28671801bbafed7d532f23f01f7c35f749b772b1b",
+        "sha256_in_prefix": "96cd6540c26605240f574df28671801bbafed7d532f23f01f7c35f749b772b1b",
+        "size_in_bytes": 14220
+      },
+      {
+        "_path": "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "233d9a3b1d9e0d8afb120ee76b98e65c55ede04162fe37c2e803a3d38968021e",
+        "sha256_in_prefix": "233d9a3b1d9e0d8afb120ee76b98e65c55ede04162fe37c2e803a3d38968021e",
+        "size_in_bytes": 1084
+      },
+      {
+        "_path": "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "48496c135a5c8adfea632728b210763d45050d540fe827477f092a2cc184c43c",
+        "sha256_in_prefix": "48496c135a5c8adfea632728b210763d45050d540fe827477f092a2cc184c43c",
+        "size_in_bytes": 5432
+      },
+      {
+        "_path": "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "7750e458c9d30137669471be9c6d1df311c0da6a8b80342d05c07567d8251dc5",
+        "sha256_in_prefix": "7750e458c9d30137669471be9c6d1df311c0da6a8b80342d05c07567d8251dc5",
+        "size_in_bytes": 684
+      },
+      {
+        "_path": "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "1e273806bec7caa425a3f5818962b9f14bc4a200a75a79f4d13387274314aa97",
+        "sha256_in_prefix": "1e273806bec7caa425a3f5818962b9f14bc4a200a75a79f4d13387274314aa97",
+        "size_in_bytes": 109
+      },
+      {
+        "_path": "lib/python3.8/site-packages/pycosat-0.6.3.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "47df40ce884f9595883a39b54562bd8afea8e1dfd82b39165099c771ccd838d1",
+        "sha256_in_prefix": "47df40ce884f9595883a39b54562bd8afea8e1dfd82b39165099c771ccd838d1",
+        "size_in_bytes": 21
+      },
+      {
+        "_path": "lib/python3.8/site-packages/pycosat.cpython-38-darwin.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/usr/local/miniconda/conda-bld/pycosat_1584209032465/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "24655806e407cdb171594488c70a27e06db7df72501bde1f9e0f4b121a717b90",
+        "sha256_in_prefix": "6929548eb2df3816da21ba147a3322eec51487d0d3212504a68ec5ac4a13d83b",
+        "size_in_bytes": 110976
+      },
+      {
+        "_path": "lib/python3.8/site-packages/test_pycosat.py",
+        "path_type": "hardlink",
+        "sha256": "f7bcef178eabacb9c477ba20b88e8646ade28c86c23ed9327eecc8144777d8b2",
+        "sha256_in_prefix": "f7bcef178eabacb9c477ba20b88e8646ade28c86c23ed9327eecc8144777d8b2",
+        "size_in_bytes": 8806
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "967f5eda7a29c0f651e55612340781c2ca527c67160266d48e87f80506c58a2d",
+  "size": 114498,
+  "subdir": "osx-64",
+  "timestamp": 1584209173716,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/pycosat-0.6.3-py38h64e0658_1004.tar.bz2",
+  "version": "0.6.3"
+}

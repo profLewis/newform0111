@@ -1,0 +1,78 @@
+{
+  "build": "h1de35cc_1002",
+  "build_number": 1002,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/Users/plewis/anaconda3/envs/umpteen/pkgs/freexl-1.0.5-h1de35cc_1002",
+  "features": "",
+  "files": [
+    "include/freexl.h",
+    "lib/libfreexl.1.dylib",
+    "lib/libfreexl.a",
+    "lib/libfreexl.dylib",
+    "lib/pkgconfig/freexl.pc"
+  ],
+  "fn": "freexl-1.0.5-h1de35cc_1002.tar.bz2",
+  "license": "LGPL-2.1",
+  "link": {
+    "source": "/Users/plewis/anaconda3/envs/umpteen/pkgs/freexl-1.0.5-h1de35cc_1002",
+    "type": 1
+  },
+  "md5": "855cedfa93b434c7bc21963cb08ea61b",
+  "name": "freexl",
+  "package_tarball_full_path": "/Users/plewis/anaconda3/envs/umpteen/pkgs/freexl-1.0.5-h1de35cc_1002.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/freexl.h",
+        "path_type": "hardlink",
+        "sha256": "2ef344c11819d0a6925ec5ae3146f5b9dfae004a6ec8e3b0c77a9e20b4ad7a92",
+        "sha256_in_prefix": "2ef344c11819d0a6925ec5ae3146f5b9dfae004a6ec8e3b0c77a9e20b4ad7a92",
+        "size_in_bytes": 23704
+      },
+      {
+        "_path": "lib/libfreexl.1.dylib",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/travis/miniconda3/conda-bld/freexl_1536234931736/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+        "sha256": "5ff390cdf50f475a6677d909fe9732c930976c89b55a114311a4e2cb9d661b2e",
+        "sha256_in_prefix": "cf972d786cbbea5888f6a2d937da2468ccd9d96974531226d98e00899d95d717",
+        "size_in_bytes": 47732
+      },
+      {
+        "_path": "lib/libfreexl.a",
+        "path_type": "hardlink",
+        "sha256": "49a12f77b2befeaf1ab107738ff8ad1ea4e9305e3763cf723460b3414219e189",
+        "sha256_in_prefix": "49a12f77b2befeaf1ab107738ff8ad1ea4e9305e3763cf723460b3414219e189",
+        "size_in_bytes": 39568
+      },
+      {
+        "_path": "lib/libfreexl.dylib",
+        "file_mode": "binary",
+        "path_type": "softlink",
+        "prefix_placeholder": "/Users/travis/miniconda3/conda-bld/freexl_1536234931736/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+        "sha256": "5ff390cdf50f475a6677d909fe9732c930976c89b55a114311a4e2cb9d661b2e",
+        "size_in_bytes": 47732
+      },
+      {
+        "_path": "lib/pkgconfig/freexl.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "f83c3977fbd9eba972c92746bdebd3afe278d10ec8eca7dd430836d87793f789",
+        "sha256_in_prefix": "42a7d3b411868c261ff86c4b52319e58b1a2b43c42cf36fb71ca615b46776efb",
+        "size_in_bytes": 315
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "ff186c1f14aba1902d52123193d241b726949cb25d2187ab3219ef794bf807dd",
+  "size": 43251,
+  "subdir": "osx-64",
+  "timestamp": 1536235032238,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/freexl-1.0.5-h1de35cc_1002.tar.bz2",
+  "version": "1.0.5"
+}
