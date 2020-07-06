@@ -1,0 +1,7 @@
+include LICENSE
+include docs/requirements.txt
+include docs/source/conf.py
+include docs/source/*.rst
+include docs/source/*.ipynb
+include docs/res/*
+include obj/*

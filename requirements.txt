@@ -1,0 +1,6 @@
+sphinx
+flake8
+pytest
+stanford_theme
+ipympl
+jupyter-c-kernel

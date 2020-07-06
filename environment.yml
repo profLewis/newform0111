@@ -1,0 +1,9 @@
+name: librat
+channels: 
+    - conda-forge
+dependencies:
+    - numpy
+    - matplotlib 
+    - pandas  
+    - nbsphinx
+    - sphinx
