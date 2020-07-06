@@ -6,10 +6,15 @@ UCL Geography: Level 7 course, Scientific Computing
 [![Documentation Status](https://readthedocs.org/projects/geog0111/badge/?version=latest)](https://geog0111.readthedocs.io/en/latest/?badge=latest)
 
 
+To install the software for this course, first make sure you have `pip` and `git` installed on your computer.
 
- 	`conda install git pip` 
+For example, if using `conda`, at the command line, type:
 
-	`pip install git+git://github.com/profLewis/newform0111@master`
+ 	conda install git pip
+	
+Then use `pip` to install from github:
+
+	pip install git+git://github.com/profLewis/newform0111@master
 
 
 Online Notebooks via Binder:
