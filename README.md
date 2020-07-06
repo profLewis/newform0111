@@ -335,8 +335,8 @@ They can then access utility codes from this:
 
 	python -c "import newform0111;help(newform0111)"
 	
-Docker 
-------
+Setting up Docker 
+-----------------
 
 You can set up a docker machine by simply downloading the [Dockerfile](https://raw.githubusercontent.com/profLewis/newform0111/master/Dockerfile) file. 
 
@@ -350,3 +350,10 @@ This will take some time to download and install (10s of minutes), but when it i
 
 	docker run -it --rm -p 8888:8888 jupyter/geog0111 start.sh jupyter lab
 	
+Then, to link to (my) docker space (use your own docker usename in place of `proflewis`):
+
+	docker tag jupyter/geog0111 proflewis/geog0111
+	
+Upload:
+
+	docker push proflewis/geog0111
