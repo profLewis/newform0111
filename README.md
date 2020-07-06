@@ -18,6 +18,11 @@ Then use `pip` to install from github:
 
 
 	conda config --add channels profLewis
+	
+	
+	python setup.py sdist
+	anaconda login
+	anaconda upload dist/*.tar.gz
 
 
 Online Notebooks via Binder:
