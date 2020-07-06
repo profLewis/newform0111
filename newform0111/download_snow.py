@@ -5,7 +5,7 @@ for given tiles into destination_folder
 
 '''
 
-from geog0111.get_modis_files import get_modis_files
+from newform0111.get_modis_files import get_modis_files
 from datetime import datetime
 
 years = [2017,2016]

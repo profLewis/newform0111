@@ -1,4 +1,4 @@
-from geog0111.geog_data import *
+from newform0111.geog_data import *
 
 destination_folder = Path('data')
 if not destination_folder.exists():
@@ -54,7 +54,7 @@ if not Path(shape_file).exists():
 import gdal
 import numpy as np
 from pathlib import Path
-from geog0111.create_blank_file import create_blank_file
+from newform0111.create_blank_file import create_blank_file
 from datetime import datetime
 
 destination_folder = Path('data')
@@ -122,7 +122,7 @@ lai[1] = (scale**0) * (lai[1] == 0).astype(float) + \
 import gdal
 import numpy as np
 from pathlib import Path
-from geog0111.create_blank_file import create_blank_file
+from newform0111.create_blank_file import create_blank_file
 from datetime import datetime
 
 destination_folder = Path('data')

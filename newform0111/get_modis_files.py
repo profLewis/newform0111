@@ -1,7 +1,7 @@
 import datetime
 from bs4 import BeautifulSoup
-from geog0111.cylog import cylog
-from geog0111.get_url import get_url
+from newform0111.cylog import cylog
+from newform0111.get_url import get_url
 import requests
 from pathlib import Path
 import numpy as np

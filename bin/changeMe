@@ -21,8 +21,8 @@ do
   out=$f
   echo '**' $in ':->' $out
   cp $f $xdir
-  sed < $xdir/$in 's/'$old'/'$new'/g' > $out
+  sed < $xdir/$in 's/'${old}'/'${new}'/g' > $out
 done
-rm -f /tmp/x.$$ $xdir
+rm -rf /tmp/x.$$ $xdir
 
 
