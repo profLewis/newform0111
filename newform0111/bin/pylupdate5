@@ -1,2 +1,0 @@
-#!/bin/sh
-exec /Users/plewis/Documents/GitHub/newform0111/newform0111/bin/python -m PyQt5.pylupdate_main ${1+"$@"}

@@ -1,6 +1,4 @@
-FROM ubuntu:16.04
-
-SHELL [ "/bin/bash", "--login", "-c" ]
+FROM continuumio/miniconda3
 
 LABEL maintainer="p.lewis@ucl.ac.uk"
 LABEL coursename="GEOG0111"
@@ -8,68 +6,30 @@ LABEL department="Geography"
 LABEL university="UCL"
 LABEL version="1.0"
 
-# Create a non-root user
-ARG username=ucl
-ARG uid=1000
-ARG gid=100
-ENV USER $username
-ENV UID $uid
-ENV GID $gid
-ENV HOME /home/$USER
-RUN adduser --disabled-password \
-    --gecos "Non-root user" \
-    --uid $UID \
-    --gid $GID \
-    --home $HOME \
-    $USER
-
-COPY environment.yml requirements.txt /tmp/
-RUN chown $UID:$GID /tmp/environment.yml /tmp/requirements.txt
-COPY postBuild /usr/local/bin/postBuild.sh
-RUN chown $UID:$GID /usr/local/bin/postBuild.sh && \
-    chmod u+x /usr/local/bin/postBuild.sh
-COPY docker/entrypoint.sh /usr/local/bin/
-RUN chown $UID:$GID /usr/local/bin/entrypoint.sh && \
-    chmod u+x /usr/local/bin/entrypoint.sh
-
-USER $USER
-# install miniconda
-ENV MINICONDA_VERSION 4.8.2
-ENV CONDA_DIR $HOME/miniconda3
-RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-$MINICONDA_VERSION-Linux-x86_64.sh -O ~/miniconda.sh && \
-    chmod +x ~/miniconda.sh && \
-    ~/miniconda.sh -b -p $CONDA_DIR && \
-    rm ~/miniconda.sh
-# make non-activate conda commands available
-ENV PATH=$CONDA_DIR/bin:$PATH
-# make conda activate command available from /bin/bash --login shells
-RUN echo ". $CONDA_DIR/etc/profile.d/conda.sh" >> ~/.profile
-# make conda activate command available from /bin/bash --interative shells
-RUN conda init bash
-
-# create a project directory inside user home
-ENV PROJECT_DIR $HOME/app
-RUN mkdir $PROJECT_DIR
-WORKDIR $PROJECT_DIR
+#
+WORKDIR /home/${USER}
 
 # add notebooks to <WORKDIR>
-ADD *.ipynb geog0111/
-ADD images geog0111/
-ADD data geog0111/
+ADD *.ipynb newform0111/
+ADD images newform0111/
+ADD data newform0111/
+ADD dockerfile newform0111/
 
-# build the conda environment
-ENV ENV_PREFIX $PWD/env
-RUN conda update --name base --channel defaults conda && \
-    conda env create --prefix $ENV_PREFIX --file /tmp/environment.yml --force && \
-    conda clean --all --yes
-# run the postBuild script to install any JupyterLab extensions
-RUN conda activate $ENV_PREFIX && \
-    /usr/local/bin/postBuild.sh && \
-    conda deactivate
+# Create the environment:
+COPY environment.yml .
+COPY postBuild .
 
-ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
+# create env newform0111
+RUN conda update -n base -c defaults conda
+RUN conda env create -f environment.yml
 
-# default command will launch JupyterLab server for development
-CMD [ "jupyter", "lab", "--no-browser", "--ip", "0.0.0.0" ]
+SHELL ["conda", "run", "-n", "newform0111", "/bin/bash", "-c"]
+RUN conda install jupyter
 
+# Make RUN commands use the new environment:
+SHELL ["conda", "run", "-n", "newform0111", "/bin/bash"]
+RUN postBuild
+
+# The code to run when container is started:
+ENTRYPOINT ["conda", "run", "-n", "newform0111", "jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
 

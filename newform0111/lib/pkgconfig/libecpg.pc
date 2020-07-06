@@ -1,9 +1,0 @@
-Name: libecpg
-Description: PostgreSQL libecpg library
-Url: http://www.postgresql.org/
-Version: 12.2
-Requires: 
-Requires.private: libpq libpgtypes
-Cflags: -I/Users/plewis/Documents/GitHub/newform0111/newform0111/include
-Libs: -L/Users/plewis/Documents/GitHub/newform0111/newform0111/lib -lecpg
-Libs.private: -L/Users/plewis/Documents/GitHub/newform0111/newform0111/lib -lm

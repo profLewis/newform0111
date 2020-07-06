@@ -1,8 +1,0 @@
-poppler_datadir=/Users/plewis/Documents/GitHub/newform0111/newform0111/share/poppler
-
-Name: poppler-data
-Description: Encoding files for use with poppler
-Version: 0.4.9
-
-Cflags: -DPOPPLER_DATADIR=/Users/plewis/Documents/GitHub/newform0111/newform0111/share/poppler
-
