@@ -17,6 +17,11 @@ Then use `pip` to install from github:
 	pip install git+git://github.com/profLewis/newform0111@master
 
 
+	conda config --add channels profLewis
+
+
+
+
 Online Notebooks via Binder:
 ----------------------------
  
@@ -244,3 +249,46 @@ and type your own commands in at the prompt, following the class or the material
 
 [Help](Chapter0_help.ipynb)
 [Connections to the lab](Connection.ipynb)
+
+
+
+For developers
+==============
+
+Making a conda package
+----------------------
+
+Assuming we are using conda, and that you have an anaconda cloud account (https://anaconda.org). The account associated with this project is profLewis, so we use the account [`https://anaconda.org/proflewis/`](https://anaconda.org/proflewis/) as our example. Assume we are using `conda` for packages. We follow the [anaconda instructions](https://docs.anaconda.com/anaconda-cloud/user-guide/tasks/work-with-packages/).
+
+Package configuration is done in the file [meta.yaml](meta.yaml).
+
+Assume we have the distribution locally in `/Users/Documents/GitHub/newform0111`:
+
+	cd /Users/plewis/Documents/GitHub/newform0111
+	
+	# installs
+	conda install anaconda-client conda-build conda-verify
+
+	# To build the package, turn off automatic Client uploading and then run the conda build command:
+	# All packages built in this way are placed in a subdirectory of the Anaconda conda-bld directory.
+	conda config --set anaconda_upload no
+	conda build .
+	
+	# You can check where the resulting file was placed with the --output option:
+	conda build . --output
+	
+	# You can upload the test package to Cloud with the Anaconda upload command:
+	anaconda login
+	anaconda upload /path/to/conda-package.tar.bz2
+
+The user can now access the package from this channel. They can set this up with:
+
+	conda config --add channels profLewis
+	
+Then install with:
+
+	conda install newform0111
+	
+They can then access utility codes from this:
+
+	python -c "import geog0111;help(geog0111)"
