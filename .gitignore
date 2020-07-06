@@ -3,6 +3,9 @@
 
 
 build
+docs/source
+docs/res
+obj
 
 # my stuff
 config.out
