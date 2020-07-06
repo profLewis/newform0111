@@ -1,4 +1,0 @@
-srm green green.dat
-srm white white.dat
-srm leaf refl/leaf.dat
-srm soil refl/price_soil.dat
