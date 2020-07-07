@@ -289,6 +289,10 @@ This now exists as [https://hub.docker.com/repository/docker/proflewis/geog0111]
 
 	docker pull proflewis/geog0111:latest
 
+To run commands on the docker image as root, for example install:
+
+	docker run -u 0 -it --rm -p 8888:8888 proflewis/geog0111:latest bash -c "cd newform0111 &&  python setup.py install && bash postBuild && conda activate newform0111"
+
 Additional info:
 
 To clear cache and force a reload of the repository, use:
