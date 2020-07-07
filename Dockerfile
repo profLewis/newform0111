@@ -1,18 +1,11 @@
 FROM continuumio/miniconda
 # Install in the default python3 environment
 # update conda first of all
-RUN conda --version
-RUN conda activate root
-
-
-
 RUN conda update -n base conda --yes
-
-RUN conda init bash
-RUN conda activate root
-RUN conda update -n root conda --yes
 # update conda packages before installing coursenotes
-RUN conda update -n root --all --yes
+RUN conda update -n base --all --yes
+RUN conda env list
+RUN conda --version
 
 # clone the course repo
 RUN git clone https://github.com/profLewis/newform0111.git
