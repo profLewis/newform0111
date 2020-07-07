@@ -297,7 +297,7 @@ Additional info:
 
 To clear cache and force a reload of the repository, use:
 
-	docker system prune -a
+	docker system prune -af
 	
 Then
 
