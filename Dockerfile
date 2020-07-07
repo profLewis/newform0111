@@ -1,6 +1,5 @@
 FROM jupyter/datascience-notebook
 # Install in the default python3 environment
-RUN pip install --upgrade pip
 # update conda first of all
 RUN conda update -n base conda --yes
 RUN conda update -n root conda --yes
@@ -12,6 +11,8 @@ RUN git clone https://github.com/profLewis/newform0111.git
 
 # go into notes directory
 # and update newform0111 env with environment.yml 
+
+RUN conda init bash
 RUN cd ${HOME}/newform0111 && conda env create -n newform0111 -f environment.yml
 RUN conda activate newform0111
 # not really needed, but just in case ...

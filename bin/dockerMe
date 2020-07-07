@@ -1,6 +1,27 @@
 #!/bin/bash
 purge=0
 
+for i in "$@"
+do
+case $i in
+  -p|--purge)
+    purge=1
+    shift # past argument=value
+    ;;
+  --help)
+    echo "${0}: [-p|--purge]"
+    echo "-p|--purge : purge any cache of the git file"
+    echo "             eg when the git has been updated"
+    echo "             and you want to force a re-read"
+    exit(1)
+    shift # past argument=value
+    ;;
+    *)
+          # unknown option
+    ;;
+esac
+done
+
 docker login
 
 # get the id for the git clone command
