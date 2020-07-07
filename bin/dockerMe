@@ -1,9 +1,24 @@
 #!/bin/bash
+purge=0
+
 docker login
-docker system prune -af
-docker build --rm -t jupyter/geog0111 .
+
+# get the id for the git clone command
+echo "first, try a build"
+docker build --rm -t jupyter/geog0111 . | tee /tmp/x.$$
+
+if [ $purge -eq 1 ]; then
+  echo "purge: $purge"
+  ID=`awk < /tmp/x.$$  '($4=="RUN" && $5 == "git" && $6 == "clone"){getline;getline;print $NF;exit}'`
+  echo "git clone ID is $ID"
+  docker system prune -f $ID
+  docker build --rm -t jupyter/geog0111 .  
+fi
+
+rm -f /tmp/x.$$
 docker tag jupyter/geog0111 proflewis/geog0111
-docker run -u 0 -w /home/joyvan/newform0111 -it proflewis/geog0111:latest bash -c "conda update conda conda-build --yes"
+
+#docker run -u 0 -w /home/joyvan/newform0111 -it proflewis/geog0111:latest bash -c "conda update conda conda-build --yes"
 
 docker push proflewis/geog0111
 #docker run -u 0 -it --rm -p 8888:8888 proflewis/geog0111:latest bash -c "cd newform0111 &&  python setup.py install && bash postBuild && conda activate newform0111"
