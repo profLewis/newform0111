@@ -1,6 +1,7 @@
 # Prerequisites
 *.d
 *.swp
+*.pyc
 
 build
 docs/source
