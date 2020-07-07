@@ -40,12 +40,13 @@ ENV PATH=$CONDA_DIR/bin:$PATH \
 
 RUN curl -O https://raw.githubusercontent.com/jupyter/docker-stacks/master/base-notebook/fix-permissions && \
     curl -O https://raw.githubusercontent.com/profLewis/newform0111/master/environment.yml && \
+    curl -O https://raw.githubusercontent.com/profLewis/newform0111/master/notebooks/Chapter1_help.ipynb && \
     curl -O https://raw.githubusercontent.com/profLewis/newform0111/master/postBuild && \
     chmod a+rx fix-permissions && \
     cp fix-permissions /usr/local/bin/fix-permissions && \
-    mkdir -p newform0111 && \
+    mkdir -p test && \
     fix-permissions newform0111 && \
-    mv environment.yml postBuild newform0111 
+    mv environment.yml postBuild Chapter1_help.ipynb test
 
 # Create NB_USER wtih name jovyan user with UID=1000 and in the 'users' group
 # and make sure these dirs are writable by the `users` group.
@@ -56,7 +57,7 @@ RUN mkdir -p $CONDA_DIR && \
     fix-permissions $CONDA_DIR
 
 USER $NB_UID
-WORKDIR $HOME/newform0111
+WORKDIR $HOME
 ARG PYTHON_VERSION=default
 
 RUN fix-permissions /home/$NB_USER
@@ -73,12 +74,12 @@ RUN conda update -n base conda --yes && \
 #    fix-permissions /home/$NB_USER 
 
 # update packages
-RUN cd /home/$NB_USER/newform0111 && \
+RUN cd /home/$NB_USER/test && \
     conda env update -n base -f environment.yml 
 
 # postBuild
-RUN cd /home/$NB_USER/newform0111 && \
-    python setup.py install && \
+RUN conda config --add channels profLewis && \
+    conda install newform0111 && \
     bash postBuild
 
 # permissions check
