@@ -1,10 +1,14 @@
-FROM jupyter/datascience-notebook
+FROM continuumio/miniconda
 # Install in the default python3 environment
 # update conda first of all
-RUN conda init bash
-RUN conda activate base
+RUN conda --version
+RUN conda activate root
+
+
+
 RUN conda update -n base conda --yes
 
+RUN conda init bash
 RUN conda activate root
 RUN conda update -n root conda --yes
 # update conda packages before installing coursenotes
