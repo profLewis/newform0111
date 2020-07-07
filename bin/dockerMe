@@ -1,5 +1,5 @@
 #!/bin/bash
-
+docker login
 docker system prune -af
 docker build --rm -t jupyter/geog0111 .
 docker tag jupyter/geog0111 proflewis/geog0111
