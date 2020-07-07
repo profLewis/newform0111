@@ -3,4 +3,4 @@ jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable rubberband/main
 jupyter nbextension enable exercise2/main
 jupyter nbextension enable --py --sys-prefix widgetsnbextension
-
+jupyter labextension install @jupyter-widgets/jupyterlab-manager@0.38
