@@ -304,6 +304,12 @@ Then
 	docker build --rm -t jupyter/geog0111 .
 
 etc. as above
+
+To update notes on docker image:
+
+	docker run -u 0 -w newform0111 -it proflewis/geog0111:latest bash -c "git reset --hard HEAD && git pull"
+	docker run -u 0 -w newform0111 -it proflewis/geog0111:latest bash -c "python setup.py install && bash postBuild && conda activate newform0111"
+
 	
 Using Docker 
 ------------
@@ -316,7 +322,3 @@ Then, run it with:
 
 	docker run -it -w newform0111 -p 8888:8888 proflewis/geog0111:latest start.sh jupyter notebook
 
-To update notes on docker image:
-
-	docker run -u 0 -w newform0111 -it proflewis/geog0111:latest bash -c "git reset --hard HEAD && git pull"
-	docker run -u 0 -w newform0111 -it proflewis/geog0111:latest bash -c "python setup.py install && bash postBuild && conda activate newform0111"
