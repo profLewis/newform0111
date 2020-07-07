@@ -37,15 +37,23 @@ ENV CONDA_DIR=/opt/conda \
 ENV PATH=$CONDA_DIR/bin:$PATH \
     HOME=/home/$NB_USER
 
+# get some basics for setup
+#
+# fix-permissions
+# environment.yml
+# Chapter1_help.ipynb as a test notebook
+# postBuild
 
 RUN curl -O https://raw.githubusercontent.com/jupyter/docker-stacks/master/base-notebook/fix-permissions && \
     curl -O https://raw.githubusercontent.com/profLewis/newform0111/master/environment.yml && \
     curl -O https://raw.githubusercontent.com/profLewis/newform0111/master/notebooks/Chapter1_help.ipynb && \
     curl -O https://raw.githubusercontent.com/profLewis/newform0111/master/postBuild && \
     chmod a+rx fix-permissions && \
-    cp fix-permissions /usr/local/bin/fix-permissions && \
-    mkdir -p test && \
-    fix-permissions newform0111 && \
+    cp fix-permissions /usr/local/bin/fix-permissions
+
+
+RUN mkdir -p test && \
+    fix-permissions test && \
     mv environment.yml postBuild Chapter1_help.ipynb test
 
 # Create NB_USER wtih name jovyan user with UID=1000 and in the 'users' group
