@@ -1,7 +1,6 @@
 FROM jupyter/datascience-notebook:9f9e5ca8fe5a
 # Install in the default python3 environment
 RUN pip install --upgrade pip
-RUN pip install jupyter_contrib_nbextensions
 
 RUN git clone https://github.com/profLewis/newform0111.git
 RUN cd newform0111 
