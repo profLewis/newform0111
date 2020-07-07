@@ -72,13 +72,12 @@ RUN conda update -n base conda --yes && \
 
 RUN cd /home/$NB_USER && \
     git clone https://github.com/profLewis/newform0111.git && \
-    fix-permissions /home/$NB_USER && \
-    cd newform0111 && \
+    fix-permissions /home/$NB_USER 
+
+RUN cd newform0111 && \
     conda env update -n base -f environment.yml 
 
 RUN conda clean --all -f -y && \
-    npm cache clean --force && \
-    jupyter notebook --generate-config && \
     rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
     rm -rf /home/$NB_USER/.cache/yarn && \
     fix-permissions $CONDA_DIR && \
