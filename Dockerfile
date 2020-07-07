@@ -64,7 +64,6 @@ RUN mkdir -p /home/$NB_USER/work && \
 
 RUN conda update -n base conda --yes && \
     conda update -n base --all --yes && \
-    conda clean --all -f -y && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER && \
     conda env list && \
@@ -76,11 +75,9 @@ RUN cd /home/$NB_USER && \
 
 RUN cd newform0111 && \
     conda env update -n base -f environment.yml 
+    
 
-RUN conda clean --all -f -y && \
-    rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
-    rm -rf /home/$NB_USER/.cache/yarn && \
-    fix-permissions $CONDA_DIR && \
+RUN fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
 
 
