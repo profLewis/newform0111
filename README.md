@@ -291,7 +291,7 @@ This now exists as [https://hub.docker.com/repository/docker/proflewis/geog0111]
 
 To run commands on the docker image as root, for example install:
 
-	docker run -u 0 -it --rm -p 8888:8888 proflewis/geog0111:latest bash -c "cd newform0111 &&  python setup.py install && bash postBuild && conda activate newform0111"
+	docker run -u 0 -it -p 8888:8888 proflewis/geog0111:latest bash -c "cd newform0111 &&  python setup.py install && bash postBuild && conda activate newform0111"
 	
 Additional info:
 
@@ -314,9 +314,9 @@ Make sure you install docker on you local computer, then type:
 	
 Then, run it with:
 
-	docker run -it --rm -p 8888:8888 proflewis/geog0111:latest start.sh jupyter notebook
+	docker run -it -w newform0111 -p 8888:8888 proflewis/geog0111:latest start.sh jupyter notebook
 
 To update notes on docker image:
 
-	docker run -u 0 -it proflewis/geog0111:latest bash -c "cd newform0111 &&  git reset --hard HEAD && git pull"
-	docker run -u 0 -it proflewis/geog0111:latest bash -c "cd newform0111 &&  python setup.py install && bash postBuild && conda activate newform0111"
+	docker run -u 0 -w newform0111 -it proflewis/geog0111:latest bash -c "git reset --hard HEAD && git pull"
+	docker run -u 0 -w newform0111 -it proflewis/geog0111:latest bash -c "python setup.py install && bash postBuild && conda activate newform0111"
