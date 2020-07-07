@@ -13,6 +13,7 @@ RUN git clone https://github.com/profLewis/newform0111.git
 # and update newform0111 env with environment.yml 
 RUN cd ${HOME}/newform0111 && conda env create -n newform0111 -f environment.yml --yes
 RUN conda activate newform0111
+# not really needed, but just in case ...
 RUN conda update -n newform0111 --all --yes
 
 RUN cd ${HOME}/newform0111 && python setup.py install && export PATH="${HOME}/.local/bin/:${PATH}" && bash postBuild
