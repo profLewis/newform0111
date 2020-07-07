@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - conda >=4.6
   - anaconda-client 
   - conda-build
   - conda-verify  
